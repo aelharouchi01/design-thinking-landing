@@ -71,6 +71,9 @@
   /* ---------- Sections ---------- */
   section { padding: 76px 0; }
   .section-head { max-width: 920px; margin-bottom: 24px; }
+  .intro-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 50px; }
+  .intro-2col .section-head { margin-bottom: 0; max-width: none; }
+  .intro-2col .summary-lead { margin-bottom: 0; max-width: none; }
   .section-head .eyebrow { color: var(--gimi-teal); }
   h2.section-title { font-size: 36px; color: var(--gimi-navy); margin-bottom: 16px; }
   .section-head p { font-size: 19px; color: var(--gimi-gray); }
@@ -190,7 +193,7 @@
     .nav-tabs { display: none; }
     .hero h1 { font-size: 34px; }
     .hero-stats { gap: 28px; }
-    .outcome-grid, .levels, .detail-pricing, .instructor { grid-template-columns: 1fr; }
+    .outcome-grid, .levels, .detail-pricing, .instructor, .intro-2col { grid-template-columns: 1fr; }
     .why-feature { grid-template-columns: 1fr; }
     .journey { flex-direction: column; }
     .j-arrow { flex-basis: auto; padding: 6px 0; }
@@ -239,11 +242,13 @@
 <!-- Program summary -->
 <section id="program">
   <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">The Program</span>
-      <h2 class="section-title">Solve complex problems, then teach your teams to do the same.</h2>
+    <div class="intro-2col">
+      <div class="section-head">
+        <span class="eyebrow">The Program</span>
+        <h2 class="section-title">Solve complex problems, then teach your teams to do the same.</h2>
+      </div>
+      <p class="summary-lead">This program equips you to solve complex problems and drive innovation, then to teach that capability back to your teams as a certified trainer. It is built around the three stages of Design Thinking: <strong>Immerse, Invent, and Implement</strong>. Level 1 builds your foundation; Level 2 applies it to a real organizational challenge, captured in a white paper.</p>
     </div>
-    <p class="summary-lead">This program equips you to solve complex problems and drive innovation, then to teach that capability back to your teams as a certified trainer. It is built around the three stages of Design Thinking: <strong>Immerse, Invent, and Implement</strong>. Level 1 builds your foundation; Level 2 applies it to a real organizational challenge, captured in a white paper.</p>
     <div class="outcome-grid">
       <div class="outcome-card">
         <h3>What you will achieve</h3>
