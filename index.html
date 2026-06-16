@@ -73,10 +73,10 @@
   /* Section intros: eyebrow on top, then title | supporting text (top-aligned) */
   .sec-intro { margin-bottom: 52px; }
   .sec-intro .eyebrow { display: inline-block; color: var(--gimi-teal); margin-bottom: 18px; }
-  .sec-intro-cols { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 60px; align-items: start; }
+  .sec-intro-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
   .sec-intro-cols .section-title { margin: 0; }
-  h2.section-title { font-size: 35px; color: var(--gimi-navy); line-height: 1.18; }
-  .sec-lead { font-size: 17.5px; line-height: 1.7; color: var(--gimi-gray); margin: 0; padding-top: 6px; }
+  h2.section-title { font-size: 43px; color: var(--gimi-navy); line-height: 1.16; letter-spacing: -0.5px; }
+  .sec-lead { font-size: 17px; line-height: 1.75; color: var(--gimi-gray); margin: 0; padding-top: 8px; }
   .sec-lead strong { color: var(--gimi-text); font-weight: 700; }
   .alt { background: var(--gimi-gray-light); }
 
@@ -93,13 +93,13 @@
   .credential-list li::before { background: var(--gimi-orange); }
 
   /* ---------- Why it matters ---------- */
-  .why-feature { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: stretch; }
-  .why-stat { background: linear-gradient(135deg, var(--gimi-navy) 0%, #263162 100%); color: #fff; border-radius: 16px; padding: 40px 38px; box-shadow: 0 14px 40px rgba(27,31,59,0.16); display: flex; flex-direction: column; justify-content: center; }
-  .why-stat .big { font-size: 66px; font-weight: 800; color: var(--gimi-yellow); line-height: 0.95; margin-bottom: 14px; }
+  .why-feature { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 32px; align-items: stretch; }
+  .why-stat { background: linear-gradient(135deg, var(--gimi-navy) 0%, #263162 100%); color: #fff; border-radius: 16px; padding: 44px 40px; box-shadow: 0 14px 40px rgba(27,31,59,0.16); display: flex; flex-direction: column; justify-content: center; }
+  .why-stat .big { font-size: 68px; font-weight: 800; color: var(--gimi-yellow); line-height: 0.95; margin-bottom: 14px; }
   .why-stat .big-cap { font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.55; }
-  .why-copy { display: flex; flex-direction: column; justify-content: center; }
-  .why-copy .lead { font-size: 20px; font-weight: 700; color: var(--gimi-navy); margin-bottom: 16px; line-height: 1.4; }
-  .why-copy p { font-size: 16.5px; color: var(--gimi-gray); margin-bottom: 14px; line-height: 1.65; }
+  .why-copy { background: #fff; border: 1.5px solid var(--gimi-border); border-radius: 16px; padding: 36px 38px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: center; }
+  .why-copy .lead { font-size: 19px; font-weight: 700; color: var(--gimi-navy); margin-bottom: 14px; line-height: 1.4; }
+  .why-copy p { font-size: 16px; color: var(--gimi-gray); margin-bottom: 12px; line-height: 1.65; }
   .why-copy p:last-child { margin-bottom: 0; }
   .gain-label { font-size: 22px; color: var(--gimi-navy); margin-top: 52px; margin-bottom: 22px; }
   .gain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 22px; }
@@ -281,7 +281,7 @@
       <span class="eyebrow">Why It Matters</span>
       <div class="sec-intro-cols">
         <h2 class="section-title">The cost of standing still has never been higher.</h2>
-        <p class="sec-lead">The pace of change now outruns the organizations that wait it out. The teams that endure are the ones that read real human needs and turn them into solutions before the market shifts.</p>
+        <p class="sec-lead">The pace of change now outruns the organizations that wait it out. The teams that endure turn real human needs into solutions before the market shifts.</p>
       </div>
     </div>
     <div class="why-feature">
