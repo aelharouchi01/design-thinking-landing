@@ -70,14 +70,11 @@
 
   /* ---------- Sections ---------- */
   section { padding: 76px 0; }
-  /* Section intros: eyebrow on top, then title | supporting text (top-aligned) */
-  .sec-intro { margin-bottom: 52px; }
-  .sec-intro .eyebrow { display: inline-block; color: var(--gimi-teal); margin-bottom: 18px; }
-  .sec-intro-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-  .sec-intro-cols .section-title { margin: 0; }
-  h2.section-title { font-size: 43px; color: var(--gimi-navy); line-height: 1.16; letter-spacing: -0.5px; }
-  .sec-lead { font-size: 17px; line-height: 1.75; color: var(--gimi-gray); margin: 0; padding-top: 8px; }
-  .sec-lead strong { color: var(--gimi-text); font-weight: 700; }
+  /* Section intros: centered eyebrow + title (content below carries the rest) */
+  .sec-intro { margin-bottom: 46px; text-align: center; }
+  .sec-intro .eyebrow { display: inline-block; color: var(--gimi-teal); margin-bottom: 14px; }
+  .sec-intro .section-title { margin: 0 auto; max-width: 840px; }
+  h2.section-title { font-size: 42px; color: var(--gimi-navy); line-height: 1.16; letter-spacing: -0.5px; }
   .alt { background: var(--gimi-gray-light); }
 
   /* ---------- Summary outcomes ---------- */
@@ -196,8 +193,7 @@
     .hero h1 { font-size: 34px; }
     .hero-stats { gap: 28px; }
     .outcome-grid, .levels, .detail-pricing, .instructor { grid-template-columns: 1fr; }
-    .sec-intro-cols { grid-template-columns: 1fr; gap: 16px; }
-    .sec-intro-cols .section-title { font-size: 30px; }
+    h2.section-title { font-size: 30px; }
     .why-feature { grid-template-columns: 1fr; gap: 28px; }
     .journey { flex-direction: column; }
     .j-arrow { flex-basis: auto; padding: 6px 0; }
@@ -248,10 +244,7 @@
   <div class="wrap">
     <div class="sec-intro">
       <span class="eyebrow">The Program</span>
-      <div class="sec-intro-cols">
-        <h2 class="section-title">Solve complex problems, then teach your teams to do the same.</h2>
-        <p class="sec-lead">This program equips you to solve complex problems and drive innovation, then to teach that capability back to your teams as a certified trainer. It is built around the three stages of Design Thinking: <strong>Immerse, Invent, and Implement</strong>. Level 1 builds your foundation; Level 2 applies it to a real organizational challenge, captured in a white paper.</p>
-      </div>
+      <h2 class="section-title">Solve complex problems, then teach your teams to do the same.</h2>
     </div>
     <div class="outcome-grid">
       <div class="outcome-card">
@@ -279,10 +272,7 @@
   <div class="wrap">
     <div class="sec-intro">
       <span class="eyebrow">Why It Matters</span>
-      <div class="sec-intro-cols">
-        <h2 class="section-title">The cost of standing still has never been higher.</h2>
-        <p class="sec-lead">The pace of change now outruns the organizations that wait it out. The teams that endure turn real human needs into solutions before the market shifts.</p>
-      </div>
+      <h2 class="section-title">The cost of standing still has never been higher.</h2>
     </div>
     <div class="why-feature">
       <div class="why-stat">
@@ -322,10 +312,7 @@
   <div class="wrap">
     <div class="sec-intro">
       <span class="eyebrow">The Curriculum</span>
-      <div class="sec-intro-cols">
-        <h2 class="section-title">Three stages, six disciplines, one iterative loop.</h2>
-        <p class="sec-lead">Design Thinking moves through three stages, each with its disciplines. The work is iterative: you cycle back as often as the problem demands, testing every promising idea against three questions throughout.</p>
-      </div>
+      <h2 class="section-title">Three stages, six disciplines, one iterative loop.</h2>
     </div>
 
     <div class="lens">
