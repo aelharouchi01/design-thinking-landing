@@ -110,9 +110,12 @@
   .gain-card p { color: var(--gimi-gray); font-size: 15px; }
 
   /* ---------- Curriculum ---------- */
-  .lens { background: var(--gimi-teal-light); border-radius: 14px; padding: 26px 30px; margin-bottom: 50px; display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
-  .lens .lens-q { flex: 1; min-width: 200px; }
-  .lens .lens-q strong { color: var(--gimi-teal-dark); display: block; font-size: 18px; margin-bottom: 4px; }
+  .lens { background: var(--gimi-teal-light); border-radius: 16px; padding: 30px 24px; margin-bottom: 50px; text-align: center; }
+  .lens-label { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--gimi-teal-dark); margin-bottom: 22px; }
+  .lens-row { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .lens .lens-q { text-align: center; padding: 2px 28px; position: relative; }
+  .lens .lens-q + .lens-q::before { content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); height: 64%; width: 1px; background: rgba(42,172,181,0.30); }
+  .lens .lens-q strong { color: var(--gimi-teal-dark); display: block; font-size: 23px; font-weight: 800; letter-spacing: -0.2px; margin-bottom: 7px; }
   .lens .lens-q span { color: var(--gimi-gray); font-size: 15px; }
   /* Curriculum — stage journeys */
   .stage-journey { padding: 30px 0; border-top: 1px dashed var(--gimi-border); }
@@ -195,6 +198,9 @@
     .outcome-grid, .levels, .detail-pricing, .instructor { grid-template-columns: 1fr; }
     h2.section-title { font-size: 30px; }
     .why-feature { grid-template-columns: 1fr; gap: 28px; }
+    .lens-row { grid-template-columns: 1fr; gap: 22px; }
+    .lens .lens-q { padding: 0; }
+    .lens .lens-q + .lens-q::before { display: none; }
     .journey { flex-direction: column; }
     .j-arrow { flex-basis: auto; padding: 6px 0; }
     .j-arrow::before { transform: rotate(135deg); }
@@ -316,9 +322,12 @@
     </div>
 
     <div class="lens">
-      <div class="lens-q"><strong>Desirable</strong><span>Do users actually want it?</span></div>
-      <div class="lens-q"><strong>Feasible</strong><span>Can it be built?</span></div>
-      <div class="lens-q"><strong>Viable</strong><span>Does it work for the business?</span></div>
+      <span class="lens-label">Every idea is tested against three questions</span>
+      <div class="lens-row">
+        <div class="lens-q"><strong>Desirable</strong><span>Do users actually want it?</span></div>
+        <div class="lens-q"><strong>Feasible</strong><span>Can it be built?</span></div>
+        <div class="lens-q"><strong>Viable</strong><span>Does it work for the business?</span></div>
+      </div>
     </div>
 
     <div class="stage-journey stage-immerse">
@@ -467,7 +476,6 @@
   <div class="wrap">
     <h2>Change does not wait. Neither should your team's ability to keep up.</h2>
     <p>The Design Thinking Train-the-Trainers Program gives you a proven method for turning real human needs into tested solutions, and the credential to lead that capability across your organization.</p>
-    <div class="cohort" style="margin-bottom:28px;"><span class="dot"></span> Next cohort begins October 6, 2026</div>
     <div><a class="btn btn-lg" href="#">Enroll Now</a></div>
   </div>
 </section>
